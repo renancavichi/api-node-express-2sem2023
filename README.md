@@ -4,7 +4,7 @@
 
 ### GIT
 
-Verifica a versão do git instalada
+Verifica a versão do git instalada hj
 ```
 git --version
 ```
