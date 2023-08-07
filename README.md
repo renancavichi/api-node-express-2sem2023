@@ -29,6 +29,11 @@ Vincula seu repositório do github a pasta local
 git remote add origin https://github.com/renancavichi/api-node-express-2sem2023.git
 ```
 
+Adiciona os arquivos no stage
+```
+git add .
+```
+
 ### Node
 
 Verifica a versão do node instalada
