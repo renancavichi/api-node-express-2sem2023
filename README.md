@@ -34,6 +34,16 @@ Adiciona os arquivos no stage
 git add .
 ```
 
+Commita as alterações no stage
+```
+git commit -m "Texto do commit"
+```
+
+Publica os commits no gitHub
+```
+git push
+```
+
 ### Node
 
 Verifica a versão do node instalada
