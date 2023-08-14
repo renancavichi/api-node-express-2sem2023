@@ -1,0 +1,37 @@
+{
+    "_id": "7245cd12-f74d-4076-a5b3-b5509b65a32d",
+    "colName": "user",
+    "created": "2023-08-14T20:36:50.544Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f7ff4e8e-005c-40e6-95f6-2d22c6e68063",
+            "colId": "7245cd12-f74d-4076-a5b3-b5509b65a32d",
+            "containerId": "",
+            "name": "/user",
+            "url": "http://192.168.159.1:3000/user",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-14T20:36:50.549Z",
+            "modified": "2023-08-14T20:36:50.549Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "15e03aa4-8c53-4af9-98f1-4bfee1987d5a",
+            "colId": "7245cd12-f74d-4076-a5b3-b5509b65a32d",
+            "containerId": "",
+            "name": "/user",
+            "url": "http://192.168.159.1:3000/user",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-14T20:38:22.247Z",
+            "modified": "2023-08-14T20:38:22.247Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
