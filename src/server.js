@@ -1,6 +1,6 @@
 //const express = require('express')
 import express from 'express'
-import userRouter from './routes/userRouter.js'
+import userRouter from './routers/userRouter.js'
 
 const api = express()
 
