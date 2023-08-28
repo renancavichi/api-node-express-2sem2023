@@ -1,0 +1,10 @@
+_id: fld_914916b4f58c478aa41402aca98894ef
+type: RequestGroup
+parentId: wrk_cbc3ffa0ea244c2694335f6ef8dec4ec
+modified: 1693243921506
+created: 1693243911034
+name: /auth
+description: ""
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1693243911034

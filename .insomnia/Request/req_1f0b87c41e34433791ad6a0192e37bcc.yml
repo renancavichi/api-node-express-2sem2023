@@ -1,0 +1,23 @@
+_id: req_1f0b87c41e34433791ad6a0192e37bcc
+type: Request
+parentId: fld_914916b4f58c478aa41402aca98894ef
+modified: 1693244037911
+created: 1693244012923
+url: http://localhost:3000/auth/logout
+name: /logout
+description: ""
+method: POST
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: Insomnia/2023.5.6
+authentication: {}
+metaSortKey: -1693244012923
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
