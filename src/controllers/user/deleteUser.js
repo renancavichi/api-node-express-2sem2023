@@ -8,6 +8,10 @@ const deleteUser = async(req, res) => {
             res.json({
                 success: "Usuário Apagado com Sucesso!",
             })
+        }else{
+            res.status(404).json({
+                error: `Usuário id: ${userData.id} não Encontrado!`
+            })
         }
     } catch (error){
         console.log(error)

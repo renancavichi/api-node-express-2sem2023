@@ -11,8 +11,11 @@ const updateUser = async (req, res) => {
                     ...userData
                 }
             })
+        } else {
+            res.status(404).json({
+                error: `Usuário id: ${userData.id} não Encontrado!`
+            })
         }
- 
     } catch (error){
         console.log(error)
         res.status(500).json({

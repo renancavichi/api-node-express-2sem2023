@@ -1,5 +1,16 @@
 # API JSON com Express
 
+## Conceitos importantes
+
+O que é node?
+O que é npm?
+O que é express?
+O que é API?
+O que é RestFULL?
+O que é MVC?
+Para que serve o nodemon?
+Para que serve o package.json?
+
 ## Comandos Úteis
 
 ### GIT
