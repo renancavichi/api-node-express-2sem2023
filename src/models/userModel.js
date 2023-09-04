@@ -9,4 +9,13 @@ const create = async (user) => {
     return await db.query("INSERT INTO users (name, email, pass) VALUES (?, ?, ?);", [name, email, pass])
 }
 
-export default {getById, create}
+const update = async (user) => {
+    const {id, name, email, pass} = user
+    return await db.query("UPDATE users SET name = ?, email = ?, pass = ? WHERE id = ?;", [name, email, pass, id])
+}
+
+const remove = async (id) => {
+    return await db.query("DELETE FROM users WHERE id = ?", [id])
+}
+
+export default {getById, create, update, remove}
