@@ -2,14 +2,15 @@
 
 ## Conceitos importantes
 
-O que é node?
+O que é Node?
 O que é npm?
-O que é express?
-O que é API?
+O que é Express?
+O que é API0?
 O que é RestFULL?
 O que é MVC?
 Para que serve o nodemon?
 Para que serve o package.json?
+O que é um Middleware?
 
 ## Comandos Úteis
 
