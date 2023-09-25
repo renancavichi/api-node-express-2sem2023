@@ -1,4 +1,4 @@
-export const PORT = 3000
+export const PORT = 3300
 
 export const DB_HOST = 'localhost'
 export const DB_USER = 'root'
