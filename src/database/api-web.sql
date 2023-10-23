@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 25-Set-2023 às 19:47
+-- Tempo de geração: 23-Out-2023 às 22:13
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.0.13
 
@@ -24,6 +24,18 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `sessions`
+--
+
+CREATE TABLE `sessions` (
+  `id` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `token` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `users`
 --
 
@@ -40,14 +52,21 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `pass`, `photo`) VALUES
-(1, 'Renan C.', 'renanc@gmail.com', '312321', 'https://avatars.githubusercontent.com/u/4259630?v=4'),
+(1, 'Renan C', 'renancavichi@gmail.com', '312321', 'https://avatars.githubusercontent.com/u/4259630?v=4'),
 (2, 'Maria', 'maria@gmail.com', '123123', 'https://avatars.githubusercontent.com/u/104683974?v=4'),
-(4, 'Rafael', 'rafael@gmail.com', '123123', 'https://avatars.githubusercontent.com/u/110418519?v=4'),
-(5, 'Camila', 'camila@gmail.com', '123123', 'https://avatars.githubusercontent.com/u/141092604?v=4');
+(4, 'Rafael', 'rafael@gmail.com', '123123', 'https://avatars.githubusercontent.com/u/110418519?v=4');
 
 --
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices para tabela `sessions`
+--
+ALTER TABLE `sessions`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `index_token` (`token`) USING BTREE,
+  ADD KEY `id_user_user_id` (`id_user`);
 
 --
 -- Índices para tabela `users`
@@ -60,10 +79,26 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT de tabela `sessions`
+--
+ALTER TABLE `sessions`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de tabela `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `sessions`
+--
+ALTER TABLE `sessions`
+  ADD CONSTRAINT `id_user_user_id` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
