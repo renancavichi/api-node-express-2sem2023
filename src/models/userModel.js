@@ -4,6 +4,10 @@ const getById = async (id) => {
     return await db.query("SELECT name, email, photo FROM users Where id = ?", [id])
 }
 
+const getByEmail = async (email) => {
+    return await db.query("SELECT * FROM users Where email = ?;", [email])
+}
+
 const getAll = async () => {
     return await db.query("SELECT id, name, email, photo FROM users")
 }
@@ -22,4 +26,4 @@ const remove = async (id) => {
     return await db.query("DELETE FROM users WHERE id = ?", [id])
 }
 
-export default {getById, create, update, remove, getAll}
+export default {getById, getByEmail, create, update, remove, getAll}
