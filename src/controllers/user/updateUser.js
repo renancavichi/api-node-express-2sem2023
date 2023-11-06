@@ -3,6 +3,11 @@ import user from "../../models/userModel.js"
 const updateUser = async (req, res) => {
     try{
         const userData = req.body
+        if(userData.id !== req.userLogged.id){
+            return res.status(400).json({
+                error: `Usuário não autorizado a fazer update.`
+            })
+        }
         const [result] = await user.update(userData)
         if(result.affectedRows === 1){
             res.json({

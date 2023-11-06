@@ -19,7 +19,6 @@ api.use(cors(corsOptions))
 api.use(bodyParser.json())
 api.use(cookieParser())
 
-
 api.get('/', (req, res) => {
     res.json({message: "Bem-vindo a nossa API"})
 })

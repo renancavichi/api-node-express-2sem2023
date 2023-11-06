@@ -14,7 +14,6 @@ const login = async (req, res) => {
             })
         } 
         const userFound = rows[0]
-        console.log('Usuário Encontrado', userFound)
         let passIsValid = false
         try{
             passIsValid = await compare(userData.pass, userFound.pass)
